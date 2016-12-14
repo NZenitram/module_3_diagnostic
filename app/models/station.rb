@@ -1,7 +1,7 @@
 class Station
 
-  def self.info
-    response_body = FuelStationService.stations["fuel_stations"]
+  def self.info(zip)
+    response_body = FuelStationService.stations(zip)["fuel_stations"]
     station_info = Hash.new
     response_body.map do |station|
       station

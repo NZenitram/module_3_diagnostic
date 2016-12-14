@@ -1,6 +1,6 @@
 class SearchController < ApplicationController
 
    def index
-     FuelStationService(params[:q]).stations
+    @stations = Station.info(params[:q])
    end
 end
