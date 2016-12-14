@@ -1,13 +1,21 @@
 class Station
 
-  def self.stations
+  def self.info
     stations = FuelStationService.stations["fuel_stations"]
-    stations.each do |station|
-      name  = station["station_name"]
-      address = station["street_address"]
-      fuel_type = station["fuel_type_code"]
-      distance = staiton["access_days_time"]
-    end
+    binding.pry
+  end
+
+  def self.name
+
+  end
+
+  def self.fuel_type
+
+  end
+
+  def self.access_time
+
+
   end
 
 
