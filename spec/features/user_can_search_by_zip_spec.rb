@@ -7,6 +7,6 @@ context "a user can search for alt fuel station by zip" do
       visit "/"
 
       page.should have_selector("input[type=submit][value='Locate']")
-    end
+    endw
   end
 end
