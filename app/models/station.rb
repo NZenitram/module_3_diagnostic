@@ -1,8 +1,11 @@
 class Station
 
   def self.info
-    stations = FuelStationService.stations["fuel_stations"]
-    binding.pry
+    response_body = FuelStationService.stations["fuel_stations"]
+    station_info = Hash.new
+    response_body.map do |station|
+      station
+    end
   end
 
   def self.name
