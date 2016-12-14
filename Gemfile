@@ -10,9 +10,14 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rspec-rails'
+gem 'faraday'
 
 group :development, :test do
   gem 'byebug'
+end
+
+group :test do
+  gem 'vcr'
 end
 
 group :development do
